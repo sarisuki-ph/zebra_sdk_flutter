@@ -1,0 +1,21 @@
+name: shield_ios
+
+on:
+  pull_request:
+    paths:
+      - ".github/workflows/shield_ios.yaml"
+      - "src/shield_ios/**"
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/shield_ios.yaml"
+      - "src/shield_ios/**"
+
+jobs:
+  build:
+    uses: VeryGoodOpenSource/very_good_workflows/.github/workflows/flutter_package.yml@v1
+    with:
+      flutter_channel: stable
+      flutter_version: 3.0.0
+      working_directory: src/shield_ios
