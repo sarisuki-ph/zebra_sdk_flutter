@@ -19,7 +19,9 @@ dependencies:
   flutter:
     sdk: flutter
   shield_platform_interface:
-    path: ../shield_platform_interface
+    git:
+      url: https://github.com/sarisuki-ph/shield_flutter.git
+      path: shield_platform_interface
 
 dev_dependencies:
   flutter_test:
