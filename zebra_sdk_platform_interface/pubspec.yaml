@@ -1,5 +1,5 @@
-name: shield_platform_interface
-description: A common platform interface for the shield plugin.
+name: zebra_sdk_platform_interface
+description: A common platform interface for the zebra sdk plugin.
 version: 0.1.0+1
 
 environment:

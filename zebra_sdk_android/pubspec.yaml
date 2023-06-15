@@ -1,5 +1,5 @@
-name: shield_android
-description: Android implementation of the shield plugin
+name: zebra_sdk_android
+description: Android implementation of the zebra sdk plugin
 version: 0.1.0+1
 publish_to: none
 
@@ -9,20 +9,18 @@ environment:
 
 flutter:
   plugin:
-    implements: shield
+    implements: zebra_sdk
     platforms:
       android:
-        package: com.sarisuki.shield.plugin
-        pluginClass: ShieldPlugin
-        dartPluginClass: ShieldAndroid
+        package: com.sarisuki.zebra_sdk.plugin
+        pluginClass: ZebraSdkPlugin
+        dartPluginClass: ZebraSdkAndroid
 
 dependencies:
   flutter:
     sdk: flutter
-  shield_platform_interface:
-    git:
-      url: https://github.com/sarisuki-ph/shield_flutter.git
-      path: shield_platform_interface
+  zebra_sdk_platform_interface:
+    path: ../zebra_sdk_platform_interface
 
 dev_dependencies:
   flutter_test:
