@@ -1,4 +1,4 @@
-group 'com.sarisuki.shield.plugin'
+group 'com.sarisuki.zebra_sdk.plugin'
 version '1.0-SNAPSHOT'
 
 
@@ -50,8 +50,6 @@ android {
 }
 
 dependencies {
-    implementation 'com.shield.android:shield-fraud:1.5.+'
     implementation "androidx.annotation:annotation:1.0.0"
-//     implementation files('C:/Users/SolStella/fvm/versions/stable/bin/cache/artifacts/engine/android-x64/flutter.jar')
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }
