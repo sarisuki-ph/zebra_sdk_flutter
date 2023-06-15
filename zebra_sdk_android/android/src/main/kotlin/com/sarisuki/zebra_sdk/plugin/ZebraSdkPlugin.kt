@@ -148,10 +148,19 @@ class ZebraSdkPlugin : FlutterPlugin, MethodCallHandler, Scanner.StatusListener,
 
         // Fetch all the available scanner and get the first one
         scanner = barcodeManager?.getDevice(BarcodeManager.DeviceIdentifier.DEFAULT)
-
         if(scanner != null){
             try {
-                scanner?.enable()
+
+
+                // Let's try and check if the scanner is already enabled before enabling it
+                if(scanner?.isEnabled == false){
+                    Log.d("ZebraSdkPlugin", "Scanner is not enabled, enabling it")
+                    scanner?.enable()
+                }
+                else {
+                    Log.d("ZebraSdkPlugin", "Scanner is already enabled")
+                }
+
                 scanner?.triggerType = Scanner.TriggerType.HARD
                 scanner?.addStatusListener(this)
                 scanner?.addDataListener(this)
