@@ -1,12 +1,12 @@
-# shield_android
+# zebra_sdk_android
 
 [![style: very good analysis][very_good_analysis_badge]][very_good_analysis_link]
 
-The Android implementation of `shield`.
+The Android implementation of `zebra_sdk_android`.
 
 ## Usage
 
-This package is [endorsed][endorsed_link], which means you can simply use `shield`
+This package is [endorsed][endorsed_link], which means you can simply use `zebra_sdk_android`
 normally. This package will be automatically included in your app when you do.
 
 [endorsed_link]: https://flutter.dev/docs/development/packages-and-plugins/developing-packages#endorsed-federated-plugin
