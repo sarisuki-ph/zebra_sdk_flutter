@@ -16,21 +16,28 @@ flutter:
 dependencies:
   flutter:
     sdk: flutter
+  freezed_annotation: ^2.2.0
   zebra_sdk_android:
-    git:
-      url: https://github.com/sarisuki-ph/zebra_sdk_flutter.git
-      path: zebra_sdk_android
-      ref: master
+    # git:
+    #   url: https://github.com/sarisuki-ph/zebra_sdk_flutter.git
+    #   path: zebra_sdk_android
+    #   ref: master
+    path: ../zebra_sdk_android
 
+  # zebra_sdk_platform_interface:
+  #   git:
+  #     url: https://github.com/sarisuki-ph/zebra_sdk_flutter.git
+  #     path: zebra_sdk_platform_interface
+  #     ref: master
   zebra_sdk_platform_interface:
-    git:
-      url: https://github.com/sarisuki-ph/zebra_sdk_flutter.git
-      path: zebra_sdk_platform_interface
-      ref: master
+    path: ../zebra_sdk_platform_interface
 
 dev_dependencies:
+  build_runner: ^2.4.5
   flutter_test:
     sdk: flutter
+  freezed: ^2.3.5
+  json_serializable: ^6.7.0
   mocktail: ^0.3.0
   plugin_platform_interface: ^2.0.0
   very_good_analysis: ^3.0.1

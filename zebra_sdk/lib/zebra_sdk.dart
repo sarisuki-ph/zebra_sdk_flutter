@@ -6,6 +6,7 @@
 // https://opensource.org/licenses/MIT.
 
 import 'package:zebra_sdk_platform_interface/zebra_sdk_platform_interface.dart';
+export 'package:zebra_sdk_platform_interface/src/models/models.dart';
 
 ZebraSdkPlatform get _platform => ZebraSdkPlatform.instance;
 
@@ -22,7 +23,7 @@ class ZebraSdk {
   }
 
   /// Returns a stream of scanner data events
-  static Stream<String> get scannerData => _platform.scannerData;
+  static Stream<ZebraScanData?> get scannerData => _platform.scannerData;
 
   /// Returns a stream of scanner status events
   static Stream<String> get scannerStatus => _platform.scannerStatus;

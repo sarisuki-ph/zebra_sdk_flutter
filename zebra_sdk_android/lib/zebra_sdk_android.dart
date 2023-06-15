@@ -36,12 +36,12 @@ class ZebraSdkAndroid extends ZebraSdkPlatform {
   }
 
   @override
-  Stream<String> get scannerData => _scannerDataEventChannel
-      .receiveBroadcastStream()
-      .map((event) => event.toString());
+  Stream<ZebraScanData?> get scannerData => _scannerDataEventChannel
+      .receiveBroadcastStream('scanner_data')
+      .map((event) => ZebraScanData.fromJsonStr(event.toString()));
 
   @override
   Stream<String> get scannerStatus => _scannerStatusEventChannel
-      .receiveBroadcastStream()
+      .receiveBroadcastStream('scanner_status')
       .map((event) => event.toString());
 }

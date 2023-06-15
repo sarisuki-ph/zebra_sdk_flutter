@@ -4,9 +4,12 @@
 // Use of this source code is governed by an MIT-style
 // license that can be found in the LICENSE file or at
 // https://opensource.org/licenses/MIT.
-
 import 'package:plugin_platform_interface/plugin_platform_interface.dart';
 import 'package:zebra_sdk_platform_interface/src/method_channel_zebra_sdk.dart';
+
+import 'package:zebra_sdk_platform_interface/zebra_sdk_platform_interface.dart';
+
+export 'src/models/models.dart';
 
 /// The interface that implementations of shield must implement.
 ///
@@ -48,5 +51,5 @@ abstract class ZebraSdkPlatform extends PlatformInterface {
   Stream<String> get scannerStatus;
 
   /// Returns a stream of scanner data events
-  Stream<String> get scannerData;
+  Stream<ZebraScanData?> get scannerData;
 }

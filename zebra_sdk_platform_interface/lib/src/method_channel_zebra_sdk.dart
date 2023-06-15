@@ -2,7 +2,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import 'package:zebra_sdk_platform_interface/zebra_sdk_platform_interface.dart';
 
-/// MethodChannelShield
+/// MethodChannelZebraSdk
 class MethodChannelZebraSdk extends ZebraSdkPlatform {
   /// The method channel used to interact with the native platform.
   @visibleForTesting
@@ -20,7 +20,7 @@ class MethodChannelZebraSdk extends ZebraSdkPlatform {
   }
 
   @override
-  Stream<String> get scannerData => throw UnimplementedError();
+  Stream<ZebraScanData?> get scannerData => throw UnimplementedError();
 
   @override
   Stream<String> get scannerStatus => throw UnimplementedError();

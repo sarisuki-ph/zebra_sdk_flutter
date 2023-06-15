@@ -20,10 +20,11 @@ dependencies:
   flutter:
     sdk: flutter
   zebra_sdk_platform_interface:
-    git:
-      url: https://github.com/sarisuki-ph/zebra_sdk_flutter.git
-      path: zebra_sdk_platform_interface
-      ref: master
+    path: ../zebra_sdk_platform_interface
+    # git:
+    #   url: https://github.com/sarisuki-ph/zebra_sdk_flutter.git
+    #   path: zebra_sdk_platform_interface
+    #   ref: master
 
 dev_dependencies:
   flutter_test:
