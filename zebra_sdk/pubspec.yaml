@@ -18,12 +18,16 @@ dependencies:
     sdk: flutter
   freezed_annotation: ^2.2.0
   zebra_sdk_android:
+    # Uncomment the following lines to manually specify the path of the Android plugin implementation:
+    # path: ../zebra_sdk_android
     git:
       url: https://github.com/sarisuki-ph/zebra_sdk_flutter.git
       path: zebra_sdk_android
       ref: master
 
   zebra_sdk_platform_interface:
+    # Uncomment the following lines to manually specify the path of the platform interface implementation:
+    # path: ../zebra_sdk_platform_interface
     git:
       url: https://github.com/sarisuki-ph/zebra_sdk_flutter.git
       path: zebra_sdk_platform_interface
