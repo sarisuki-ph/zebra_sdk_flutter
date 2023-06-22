@@ -6,6 +6,9 @@ buildscript {
     repositories {
         google()
         mavenCentral()
+        maven {
+          url = "https://zebratech.jfrog.io/artifactory/EMDK-Android/"
+        } 
     }
 
     dependencies {
@@ -19,6 +22,9 @@ rootProject.allprojects {
         jcenter()
         google()
         mavenCentral()
+        maven {
+          url = "https://zebratech.jfrog.io/artifactory/EMDK-Android/"
+        } 
     }
 }
 
@@ -49,4 +55,5 @@ android {
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    compileOnly 'com.symbol.emdk:+'
 }
