@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
   package="com.sarisuki.zebra_sdk.plugin">
-    <uses-permission android:name="com.symbol.emdk.permission.EMDK"/>
+
 
 </manifest>
