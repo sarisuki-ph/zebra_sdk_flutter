@@ -1,1 +1,12 @@
 rootProject.name = 'zebra_sdk_android'
+dependencyResolutionManagement {
+      repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+      repositories {
+          google()
+          mavenCentral()
+          jcenter() // Warning: this repository is deprecated; no updates allowed
+          maven {
+              url = "https://zebratech.jfrog.io/artifactory/EMDK-Android/"
+          }
+      }
+  }
